@@ -7,15 +7,35 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/btn_get_location"
+        android:id="@+id/btn_implementation1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Get Location"
+        android:layout_marginTop="128dp"
+        android:text="Implementation 1"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_implementation2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Implementation 2"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_implementation1" />
+
+    <Button
+        android:id="@+id/btn_implementation3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Implementation 3"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_implementation2" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
