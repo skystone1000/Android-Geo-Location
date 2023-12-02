@@ -31,14 +31,15 @@ class MainActivity : AppCompatActivity() {
         val listener= View.OnClickListener { view ->
             when (view.id) {
                 R.id.btn_implementation1 -> {
+                    Toast.makeText(this,"Use *codelab-while-in-use-location* app", Toast.LENGTH_SHORT).show()
+                }
+                R.id.btn_implementation2 -> {
                     val intent = Intent(this, LocationActivity2::class.java)
                     startActivity(intent)
                 }
-                R.id.btn_implementation1 -> {
-                    // Do some work here
-                }
-                R.id.btn_implementation1 -> {
-                    // Do some work here
+                R.id.btn_implementation3 -> {
+                    val intent = Intent(this, LocationActivity3::class.java)
+                    startActivity(intent)
                 }
             }
         }

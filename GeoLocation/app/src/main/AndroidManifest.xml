@@ -17,6 +17,9 @@
         android:theme="@style/Theme.GeoLocation"
         tools:targetApi="31">
         <activity
+            android:name=".LocationActivity3"
+            android:exported="false" />
+        <activity
             android:name=".LocationActivity2"
             android:exported="false" />
         <activity
