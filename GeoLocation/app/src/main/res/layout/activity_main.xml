@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="128dp"
-        android:text="Implementation 1 - Codelab"
+        android:text="Impl 1 - Codelab : While in use"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,8 +21,8 @@
         android:id="@+id/btn_implementation2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Implementation 2 - Basic"
-        android:textSize="18sp"
+        android:text="Impl 2 - Basic Latitude, Longitude"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_implementation1" />
@@ -31,11 +31,22 @@
         android:id="@+id/btn_implementation3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Implementation 3 - Details"
-        android:textSize="18sp"
+        android:text="Impl 3 - FusedLocationProviderClient"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_implementation2" />
+
+    <Button
+        android:id="@+id/btn_implementation4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Impl 4 - LocationManager"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_implementation3" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

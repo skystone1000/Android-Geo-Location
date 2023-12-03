@@ -1,21 +1,14 @@
 package com.example.geolocation
 
 import android.content.Intent
-import android.content.pm.PackageManager
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.app.ActivityCompat
-import com.google.android.gms.location.FusedLocationProviderClient
-import com.google.android.gms.location.LocationServices
 
 
 class MainActivity : AppCompatActivity() {
-
-    // Step 2.0 - Variables
-    lateinit var fusedLocationProviderClient: FusedLocationProviderClient
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -27,6 +20,7 @@ class MainActivity : AppCompatActivity() {
         val button1 = findViewById<View>(R.id.btn_implementation1) as Button
         val button2 = findViewById<View>(R.id.btn_implementation2) as Button
         val button3 = findViewById<View>(R.id.btn_implementation3) as Button
+        val button4 = findViewById<View>(R.id.btn_implementation4) as Button
 
         val listener= View.OnClickListener { view ->
             when (view.id) {
@@ -41,12 +35,17 @@ class MainActivity : AppCompatActivity() {
                     val intent = Intent(this, LocationActivity3::class.java)
                     startActivity(intent)
                 }
+                R.id.btn_implementation4 -> {
+                    val intent = Intent(this, LocationActivity4::class.java)
+                    startActivity(intent)
+                }
             }
         }
 
         button1.setOnClickListener(listener)
         button2.setOnClickListener(listener)
         button3.setOnClickListener(listener)
+        button4.setOnClickListener(listener)
 
     }
 }
