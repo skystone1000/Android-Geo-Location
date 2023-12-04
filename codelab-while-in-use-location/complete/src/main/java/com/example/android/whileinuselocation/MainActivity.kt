@@ -83,6 +83,9 @@ private const val REQUEST_FOREGROUND_ONLY_PERMISSIONS_REQUEST_CODE = 34
  * notification. This dismisses the notification and stops the service.
  */
 class MainActivity : AppCompatActivity(), SharedPreferences.OnSharedPreferenceChangeListener {
+    // Code lab Link
+    // https://codelabs.developers.google.com/codelabs/while-in-use-location/#3
+
     private var foregroundOnlyLocationServiceBound = false
 
     // Provides location updates for while-in-use feature.
