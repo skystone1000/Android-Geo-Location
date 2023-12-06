@@ -50,6 +50,10 @@ dependencies {
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 
+    val fragment_version = "1.6.2"
+    implementation("androidx.fragment:fragment-ktx:$fragment_version")
+
+
     // Step 1.0 - FusedLocationProvider
     implementation("com.google.android.gms:play-services-location:21.0.1")
 }
