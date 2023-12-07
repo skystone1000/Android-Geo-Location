@@ -1,14 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".LocationFragment5">
 
     <TextView
-        android:id="@+id/test"
+        android:id="@+id/fragment_title"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Hello blank fragment" />
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginTop="24dp"
+        android:textSize="24sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Inside Fragment" />
 
-</FrameLayout>
+    <Button
+        android:id="@+id/fragment_loc_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fragment Location"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
